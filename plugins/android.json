@@ -12,6 +12,9 @@
     },
     "cordova-plugin-websocket-server": {
       "PACKAGE_NAME": "net.mascaron.cordova"
+    },
+    "cordova-plugin-android-hotspotmanager": {
+      "PACKAGE_NAME": "net.mascaron.cordova"
     }
   },
   "dependent_plugins": {

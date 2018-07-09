@@ -22,5 +22,13 @@
     },
     "is_top_level": false,
     "variables": {}
+  },
+  "cordova-plugin-android-hotspotmanager": {
+    "source": {
+      "type": "local",
+      "path": "/home/stephane/workspaceNode/LanGame/node_modules/cordova-plugin-hotspot"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

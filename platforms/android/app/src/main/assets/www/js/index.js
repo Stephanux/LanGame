@@ -40,6 +40,40 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        // initialisation plugin HotSpot Wifi plugin :
+        var param = {
+            ssid: "wifiApp",
+            password: "azertyuiop"
+        };
+        if (parseFloat(cordova.version) >= 6.0) {
+            cordova.plugins.hotSpotManager.enableAccessPoint(param, function(res) {
+                console.log('hotSpot Wifi : "wifiApp" activated with passwd : "azertyuiop" ');
+                //alert("hotSpotEnabled: " + res);
+            }, function(err) {
+                alert("ERROR: " + err);
+            });
+        } else { // android version < 6.0
+            // initialisation  du HotSpot Wifi plugin https://github.com/hypery2k/cordova-hotspot-plugin
+            var hotSpot = cordova.plugins.hotspot;
+            alert("hotSpot = " + hotSpot);
+            hotSpot.config = {
+                mode: 'WPA2PSK'
+            };
+            hotSpot.isHotspotEnabled(
+                function() {
+                    hotSpot.isHotSpotActive = true;
+                },
+                function() {
+                    hotSpot.isHotSpotActive = false;
+                }
+            );
+            hotSpot.createHotspot("wifiApp", hotSpot.config.mode, "azertyuiop", function() {
+                alert("HotSpot démarré");
+            }, function(error) {
+                alert('Erreur Céation HotSpot "wifiApp" : ' + error);
+            });
+        }
     }
 };
 

@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
+ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 MERGED from [:CordovaLib] /home/stephane/workspaceNode/LanGame/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
-INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 	package
 		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:2:102-132
 		INJECTED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml
@@ -90,3 +90,19 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:14:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:16:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:17:22-73
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:18:5-73
+	android:name
+		ADDED from /home/stephane/workspaceNode/LanGame/platforms/android/app/src/main/AndroidManifest.xml:18:22-70
