@@ -40,7 +40,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-
+        var wsserver = cordova.plugins.wsserver;
+        var port = "8080";
         // initialisation plugin HotSpot Wifi plugin :
         var param = {
             ssid: "wifiApp",
@@ -50,6 +51,38 @@ var app = {
             cordova.plugins.hotSpotManager.enableAccessPoint(param, function(res) {
                 console.log('hotSpot Wifi : "wifiApp" activated with passwd : "azertyuiop" ');
                 //alert("hotSpotEnabled: " + res);
+                /** todo : ici on lancer le serveur WebSocket qui permettra les connexions des joueurs */
+                wsserver.start(port, {
+                    // WebSocket Server handlers
+                    'onFailure' :  function(addr, port, reason) {
+                        console.log('Stopped listening on %s:%d. Reason: %s', addr, port, reason);
+                    },
+                    // WebSocket Connection handlers
+                    'onOpen' : function(conn) {
+                        /* conn: {
+                         'uuid' : '2f40741c-83c9-11e8-add3-0fa08e63bb8e',
+                         'remoteAddr' : '192.168.1.10',
+                         'httpFields' : {...},
+                         'resource' : '/?param1=value1&param2=value2'
+                         } */
+                        console.log('A user connected from %s', conn.remoteAddr);
+                    },
+                    'onMessage' : function(conn, msg) {
+                        console.log(conn, msg);
+                    },
+                    'onClose' : function(conn, code, reason, wasClean) {
+                        console.log('A user disconnected from %s', conn.remoteAddr);
+                    },
+                    // Other options
+                    'origins' : [ 'file://' ], // validates the 'Origin' HTTP Header.
+                    'protocols' : [ 'my-protocol-v1', 'my-protocol-v2' ], // validates the 'Sec-WebSocket-Protocol' HTTP Header.
+                    'tcpNoDelay' : true // disables Nagle's algorithm.
+                }, function onStart(addr, port) {
+                    console.log('Listening on %s:%d', addr, port);
+                }, function onDidNotStart(reason) {
+                    console.log('Did not start. Reason: %s', reason);
+                });
+
             }, function(err) {
                 alert("ERROR: " + err);
             });

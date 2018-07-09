@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 10 00:32:28 CEST 2018
+#Tue Jul 10 00:45:16 CEST 2018
 25.file=/home/stephane/workspaceNode/LanGame/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-hdpi-v4/icon.png
 25.base=/home/stephane/workspaceNode/LanGame/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_
 22.set=ASSET
