@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/stephane/.nvm/versions/node/v8.11.2/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'cordova-plugin-websocket-server',
+1 verbose cli   '--production',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.11.2
+4 verbose stack Error: Cannot find module 'ansi'
+4 verbose stack     at Function.Module._resolveFilename (module.js:547:15)
+4 verbose stack     at Function.Module._load (module.js:474:25)
+4 verbose stack     at Module.require (module.js:596:17)
+4 verbose stack     at require (internal/module.js:11:18)
+4 verbose stack     at Object.<anonymous> (/usr/share/npm/lib/ls.js:15:13)
+4 verbose stack     at Module._compile (module.js:652:30)
+4 verbose stack     at Object.Module._extensions..js (module.js:663:10)
+4 verbose stack     at Module.load (module.js:565:32)
+4 verbose stack     at tryModuleLoad (module.js:505:12)
+4 verbose stack     at Function.Module._load (module.js:497:3)
+5 verbose cwd /home/stephane/workspaceNode/LanGame
+6 error Linux 4.13.1-041301-generic
+7 error argv "/home/stephane/.nvm/versions/node/v8.11.2/bin/node" "/usr/bin/npm" "install" "cordova-plugin-websocket-server" "--production" "--save"
+8 error node v8.11.2
+9 error npm  v3.5.2
+10 error code MODULE_NOT_FOUND
+11 error Cannot find module 'ansi'
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]

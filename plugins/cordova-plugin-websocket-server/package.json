@@ -1,0 +1,61 @@
+{
+  "_from": "cordova-plugin-websocket-server",
+  "_id": "cordova-plugin-websocket-server@1.4.10",
+  "_inBundle": false,
+  "_integrity": "sha512-AJJ+kclul9qWlQFWFdPg61lsYrUdUjnJOpMcMcaB7k7cRjbn4OnsVf1tvBvs57KlEHo7bIKycLcJ/Scl3HaQkg==",
+  "_location": "/cordova-plugin-websocket-server",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-websocket-server",
+    "name": "cordova-plugin-websocket-server",
+    "escapedName": "cordova-plugin-websocket-server",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-websocket-server/-/cordova-plugin-websocket-server-1.4.10.tgz",
+  "_shasum": "ff934c218f25ee8cce88f058093260e63eb8b59e",
+  "_spec": "cordova-plugin-websocket-server",
+  "_where": "/home/stephane/workspaceNode/LanGame",
+  "author": {
+    "name": "Sylvain Bréjeon",
+    "url": "https://github.com/becvert"
+  },
+  "bugs": {
+    "url": "https://github.com/becvert/cordova-plugin-websocket-server/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-websocket-server",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova WebSocket Server Plugin",
+  "homepage": "https://github.com/becvert/cordova-plugin-websocket-server",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "plugin",
+    "network",
+    "websocket",
+    "server"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-websocket-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becvert/cordova-plugin-websocket-server.git"
+  },
+  "version": "1.4.10"
+}
